@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="style/images/favicon.png">
-  <title>Trás Pra Mim</title>
-  <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style/css/plugins.css">
-  <link rel="stylesheet" type="text/css" href="style/revolution/css/settings.css">
-  <link rel="stylesheet" type="text/css" href="style/revolution/css/layers.css">
-  <link rel="stylesheet" type="text/css" href="style/revolution/css/navigation.css">
-  <link rel="stylesheet" type="text/css" href="style/type/type.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="style/css/color/rose.css">
+  @component("layouts.meta")
+  @endcomponent
+  @component("layouts.links")
+  @endcomponent
 </head>
+
 <body>
   <div class="content-wrapper white-wrapper">
     <nav class="navbar transparent nav-uppercase navbar-expand-lg">
@@ -85,7 +79,7 @@
         <!-- /.navbar-other -->
         <div class="navbar-collapse offcanvas-nav">
           <div class="offcanvas-header d-lg-none d-xl-none">
-            <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+            <a href="index.html"><img src="#" srcset="style/images/logo/logo.png 1x, style/images/logo/logo.png 2x" alt="" /></a>
             <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
           </div>
           <ul class="navbar-nav mx-auto">
@@ -399,7 +393,7 @@
     <!-- /.navbar -->
     <div class="offcanvas-info inverse-text">
       <button class="plain offcanvas-close offcanvas-info-close"><i class="jam jam-close"></i></button>
-      <a href="index.html"><img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" /></a>
+      <a href="index.html"><img src="#" srcset="style/images/logo/logo.png 1x, style/images/logo/logo.png 2x" alt="" /></a>
       <div class="space30"></div>
       <p>Snowlake is a multi-concept and powerful site template contains rich layouts with possibility of unlimited combinations & beautiful elements.</p>
       <div class="space20"></div>
@@ -677,7 +671,7 @@
         <div class="row">
           <div class="col-md-4 col-lg-3">
             <div class="widget">
-              <img src="#" srcset="style/images/logo-light.png 1x, style/images/logo-light@2x.png 2x" alt="" />
+              <img src="#" srcset="style/images/logo/logo.png 1x, style/images/logo/logo.png 2x" alt="" />
               <div class="space40"></div>
               <p>© 2020 Snowlake App. <br class="d-none d-lg-block" />All rights reserved.</p>
             </div>
@@ -756,4 +750,5 @@
   <script src="style/js/plugins.js"></script>
   <script src="style/js/scripts.js"></script>
 </body>
+
 </html>
