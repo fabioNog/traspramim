@@ -19,6 +19,11 @@ Route::GET('/', function(){
     return view('index');
 });
 
+Route::GET('/acessar/login', function(){
+    return view('login');
+});
+
+
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
