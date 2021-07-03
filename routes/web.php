@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
+use App\Http\Controllers\SiteHomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +14,9 @@ use App\Http\Controllers\GoogleController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+//Route::GET('/', [SiteHomeController::class, 'index']);
+Route::GET('/', function(){
+    return view('index');
 });
 
 Route::get('auth/google', [App\Http\Controllers\GoogleController::class, 'redirectToGoogle']);
