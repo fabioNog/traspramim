@@ -1,6 +1,17 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
+<head>
+  @component("layouts.meta")
+  @endcomponent
+  @component("layouts.links") 
+  @endcomponent
+
+</head>
+
+
+
+<body>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -62,4 +73,13 @@
         </div>
     </div>
 </div>
-@endsection
+</body>
+<script>
+  function logar(){
+    $("#login_modal").modal("show");
+  }
+
+</script>
+  @component("layouts.scripts") 
+  @endcomponent
+</html>
