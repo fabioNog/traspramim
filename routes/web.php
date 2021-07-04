@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\SiteHomeController;
+use App\Http\Controllers\ComprarController;
+use App\Http\Controllers\ViajarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +28,5 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/comprar', [ComprarController::class, 'index'])->name('comprar');
+Route::get('/viajar', [ViajarController::class, 'index'])->name('viajar');
