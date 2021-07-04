@@ -23,27 +23,21 @@
           <div class="col-lg-4 mb-0">
             <ul class="nav nav-tabs nav-tabs-bg flex-column">
               <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center active" data-toggle="tab" href="#tab5-1">
-                  <div class="icon icon-svg mr-25"><img src="style/images/icons/of-diagram.png" alt=""></div>
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/sm-setting.png"alt=""></div>
                   <div><span>Informações da Compra</span>
                     <p>O que você precisa comprar?</p>
                   </div>
                 </a> </li>
               <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#tab5-2">
-                  <div class="icon icon-svg mr-25"><img src="style/images/icons/st-payment-method.png" alt=""></div>
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/of-diagram.png" alt=""></div>
                   <div><span>Informações da Viagem</span>
                     <p>Sua Compra vai pra onde?</p>
                   </div>
                 </a> </li>
               <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#tab5-3">
-                  <div class="icon icon-svg mr-25"><img src="style/images/icons/ms-cloud-computing.png" alt=""></div>
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/st-payment-method.png"  alt=""></div>
                   <div><span>Checar Tudo</span>
                     <p>Duis mollis commodo luctus</p>
-                  </div>
-                </a> </li>
-              <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#tab5-4">
-                  <div class="icon icon-svg mr-25"><img src="style/images/icons/sm-setting.png" alt=""></div>
-                  <div><span>System Integration</span>
-                    <p>Etiam porta sem malesuada</p>
                   </div>
                 </a> </li>
             </ul>
@@ -82,9 +76,21 @@
 
 </body>
 <script>
-  function logar() {
-    $("#login_modal").modal("show");
+
+function openBilling(evt, operator) {
+  console.log("Cliquei");
+  /* var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
+  tablinks = document.getElementsByClassName("nav-item");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(operator).style.display = "block";
+  evt.currentTarget.className += " active"; */
+}
 </script>
 @component("layouts.scripts")
 @endcomponent
