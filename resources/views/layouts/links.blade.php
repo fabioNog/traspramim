@@ -8,3 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style/type/type.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="style/css/color/rose.css">
+
+  <!-- Fonts -->
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">

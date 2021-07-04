@@ -16,9 +16,9 @@
             <button class="plain offcanvas-close offcanvas-nav-close"><i class="jam jam-close"></i></button>
           </div>
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item dropdown"><button onclick="logar()" type="button" class="dropdown-toggle btn btn-rose" data-bs-toggle="modal">Logar</button>
+            <li class="nav-item dropdown"><button onclick="logar()"  type="button" class="dropdown-toggle btn btn-rose" data-bs-toggle="modal">LOGAR</button>
             </li>
-            <li class="nav-item dropdown" style="padding-left:5px;"><a href="#" class=" dropdown-toggle btn btn-blue">Cadastrar</a>
+            <li class="nav-item dropdown" style="padding-left:5px;"><a  type="button" href="{{route('register')}}" class="dropdown-toggle btn btn-blue" data-bs-toggle="modal">CADASTRAR</a>
             </li>
           </ul>
           <!-- /.navbar-nav -->

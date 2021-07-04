@@ -1,4 +1,4 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="modal-02" aria-hidden="true">
+<div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="container-fluid boxed p-0">
@@ -56,7 +56,7 @@
                           <button class="btn" type="submit">Entrar</button>
                         </div>
                         <div class="col-md-3 offset-md-1 col-sm-1"> 
-                          <a class="btn btn-blue" href="#!">Cadastrar</a>
+                          <a class="btn btn-blue" href="{{route('register')}}">Cadastrar</a>
                         </div>
                       </div>
                       <div class="col-md-6 offset-md-3" style="background-color: #3587A4; top:10px!important; border-radius:2%;">

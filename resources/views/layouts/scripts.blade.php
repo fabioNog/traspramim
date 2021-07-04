@@ -15,3 +15,6 @@
   <script src="style/revolution/js/extensions/revolution.extension.video.min.js"></script>
   <script src="style/js/plugins.js"></script>
   <script src="style/js/scripts.js"></script>
+
+  <!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
