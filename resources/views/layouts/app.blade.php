@@ -13,7 +13,7 @@
 
 <body>
   <div class="content-wrapper white-wrapper">
-  @component("layouts.navbar") 
+  @component("layouts.navbar-app") 
   @endcomponent
   @component("auth.modal-login") 
   @endcomponent
