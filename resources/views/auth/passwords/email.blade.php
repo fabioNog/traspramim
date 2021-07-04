@@ -17,7 +17,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header" style="text-align: center;">
-                    <span> <button type="button" class="btn"> Trás Pra mim</button></span>
+                    <span> <a type="button" href="{{url('/')}}" class="btn"> Trás Pra mim</a></span>
                     {{ __('Resete sua Senha') }}
                 </div>
 

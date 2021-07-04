@@ -31,7 +31,7 @@
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Senha">
+                            <input id="password" type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="Senha">
                             @error('password')
                             <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
