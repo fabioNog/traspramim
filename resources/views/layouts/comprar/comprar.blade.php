@@ -4,7 +4,7 @@
 <head>
   @component("layouts.meta")
   @endcomponent
-  @component("layouts.links") 
+  @component("layouts.links")
   @endcomponent
 
 </head>
@@ -13,49 +13,80 @@
 
 <body>
   <div class="content-wrapper white-wrapper">
-  @component("layouts.navbar-compras") 
-  @endcomponent
+    @component("layouts.navbar-compras")
+    @endcomponent
     <!-- /.navbar -->
-<div class="wrapper light-wrapper">
+    <div class="wrapper light-wrapper">
       <div class="container inner">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <h2 class="section-title mb-40 text-center">Cadastre sua compra</h2>
-            <form class="fields-black">
-              <div class="form-group">
-                <label for="exampleInputName2">Name</label>
-                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                <label for="exampleInputEmail2">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label" for="customCheck2">Check this custom checkbox</label>
-                </div>
-              </div>
-              <!-- /.form-group -->
-              <button type="submit" class="btn">Submit</button>
-            </form>
-            <!-- /form -->
+        <h2 class="section-title mb-40 text-center">Comprar</h2>
+        <div class="row no-gutters">
+          <div class="col-lg-4 mb-0">
+            <ul class="nav nav-tabs nav-tabs-bg flex-column">
+              <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center active" data-toggle="tab" href="#tab5-1">
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/of-diagram.png" alt=""></div>
+                  <div><span>Informações da Compra</span>
+                    <p>O que você precisa comprar?</p>
+                  </div>
+                </a> </li>
+              <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#tab5-2">
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/st-payment-method.png" alt=""></div>
+                  <div><span>Informações da Viagem</span>
+                    <p>Sua Compra vai pra onde?</p>
+                  </div>
+                </a> </li>
+              <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#tab5-3">
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/ms-cloud-computing.png" alt=""></div>
+                  <div><span>Checar Tudo</span>
+                    <p>Duis mollis commodo luctus</p>
+                  </div>
+                </a> </li>
+              <li class="nav-item"> <a class="nav-link d-flex flex-row align-items-center" data-toggle="tab" href="#tab5-4">
+                  <div class="icon icon-svg mr-25"><img src="style/images/icons/sm-setting.png" alt=""></div>
+                  <div><span>System Integration</span>
+                    <p>Etiam porta sem malesuada</p>
+                  </div>
+                </a> </li>
+            </ul>
+            <!-- /.nav-tabs -->
           </div>
-          <!-- /column -->
+          <!--/column -->
+          <div class="col-lg-7 ml-auto">
+            <div class="tab-content">
+              <div class="tab-pane show active" id="tab5-1">
+                @component("layouts.comprar.info_comprar")
+                @endcomponent
+              </div>
+              <div class="tab-pane" id="tab5-2">
+                @component("layouts.comprar.info_viajar")
+                @endcomponent
+              </div>
+              <div class="tab-pane" id="tab5-3">
+                @component("layouts.comprar.checar_comprar")
+                @endcomponent
+              </div>
+              <div class="tab-pane" id="tab5-4">
+                <figure>
+                  <img src="style/images/art/ui4.png" alt="" />
+                </figure>
+              </div>
+            </div>
+            <!-- /.tab-content -->
+          </div>
+          <!--/column -->
         </div>
-        <!-- /.row -->
+        <!--/.row -->
       </div>
       <!-- /.container -->
     </div>
-    </body>
+    <!-- /.wrapper -->
+
+</body>
 <script>
-  function logar(){
+  function logar() {
     $("#login_modal").modal("show");
   }
-
 </script>
-  @component("layouts.scripts") 
-  @endcomponent
+@component("layouts.scripts")
+@endcomponent
+
 </html>
