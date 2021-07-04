@@ -110,47 +110,7 @@
                 <!-- /.item-content -->
               </div>
               <!-- /.item -->
-              <div class="item item-detailed grid-sizer col-md-6 col-lg-4">
-                <figure class="rounded mb-20">
-                  <div class="item-detailed-image"><img src="style/images/art/s4.jpg" alt="" /><img src="style/images/art/s4-2.jpg" alt="" /></div>
-                  <a href="#" class="hover-icon-first" data-tip="Add to Wishlist"><i class="jam jam-heart"></i></a>
-                  <a href="#" class="hover-icon-second" data-tip="Add to cart"><i class="jam jam-shopping-cart"></i></a>
-                </figure>
-                <div class="item-content">
-                  <h2 class="post-title mb-10"><a href="#">Branding Stationery</a></h2>
-                  <div class="price mb-0"><span class="amount">$45.00</span></div>
-                  <span class="ratings four"></span>
-                </div>
-                <!-- /.item-content -->
-              </div>
-              <!-- /.item -->
-              <div class="item item-detailed grid-sizer col-md-6 col-lg-4">
-                <figure class="rounded mb-20">
-                  <div class="item-detailed-image"><img src="style/images/art/s5.jpg" alt="" /><img src="style/images/art/s5-2.jpg" alt="" /></div>
-                  <a href="#" class="hover-icon-first" data-tip="Add to Wishlist"><i class="jam jam-heart"></i></a>
-                  <a href="#" class="hover-icon-second" data-tip="Add to cart"><i class="jam jam-shopping-cart"></i></a>
-                </figure>
-                <div class="item-content">
-                  <h2 class="post-title mb-10"><a href="#">Brown Paper Card</a></h2>
-                  <div class="price mb-0"><span class="amount">$45.00</span></div>
-                  <span class="ratings four"></span>
-                </div>
-                <!-- /.item-content -->
-              </div>
-              <!-- /.item -->
-              <div class="item item-detailed grid-sizer col-md-6 col-lg-4">
-                <figure class="rounded mb-20">
-                  <div class="item-detailed-image"><img src="style/images/art/s6.jpg" alt="" /><img src="style/images/art/s6-2.jpg" alt="" /></div>
-                  <a href="#" class="hover-icon-first" data-tip="Add to Wishlist"><i class="jam jam-heart"></i></a>
-                  <a href="#" class="hover-icon-second" data-tip="Add to cart"><i class="jam jam-shopping-cart"></i></a>
-                </figure>
-                <div class="item-content">
-                  <h2 class="post-title mb-10"><a href="#">Shopping Paperbag</a></h2>
-                  <div class="price mb-0"><span class="amount">$45.00</span></div>
-                  <span class="ratings four"></span>
-                </div>
-                <!-- /.item-content -->
-              </div>
+              
             </div>
             <!-- /.row -->
           </div>
