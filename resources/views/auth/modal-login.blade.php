@@ -16,28 +16,50 @@
                 <div class="box p-50 d-flex">
                   <div class="align-self-center">
                     <h2 class="section-title mb-30" style="text-align: center;">Entrar</h2>
-                    <form>
+                    <form method="POST" action="{{ route('login') }}">
+                      @csrf
                       <div class="form-row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            <input id="email" type="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Email" required autocomplete="email" autofocus>
+                            @error('email')
+                            <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                           </div>
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="text" class="form-control" id="inputPassword" placeholder="Password">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Senha">
+                            @error('password')
+                            <span class="invalid-feedback" role="alert">
+                              <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
                           </div>
                         </div>
                       </div>
+                      <div class="form-group row">
+                            <div class="col-md-6 offset-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+
+                                    <label class="form-check-label" for="remember">
+                                        {{ __('Lembrar Senha') }}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                       <div class="form-row" style="text-align: center;">
                         <div class="col-md-3 offset-md-2 col-sm-3">
-                          <a class="btn" href="#!">Entrar</a>
+                          <button class="btn" type="submit">Entrar</button>
                         </div>
-                        <div class="col-md-3 offset-md-1 col-sm-1">
+                        <div class="col-md-3 offset-md-1 col-sm-1"> 
                           <a class="btn btn-blue" href="#!">Cadastrar</a>
                         </div>
                       </div>
-                      <div class="col-md-6 offset-md-3"  style="background-color: #3587A4; top:10px!important; border-radius:2%;">
+                      <div class="col-md-6 offset-md-3" style="background-color: #3587A4; top:10px!important; border-radius:2%;">
                         <div class="form-group">
                           <a class="col-md-6 offset-md-2" href="{{url('auth/google')}}" style="color: #FBFEFB; border-radius:50%;">
                             <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="color: blue;">
