@@ -16,6 +16,7 @@
   @component("layouts.navbar") 
   @endcomponent
     <!-- /.navbar -->
+    
 
     <div class="wrapper white-wrapper">
       <div class="container inner pt-0">
@@ -207,10 +208,7 @@
     @component("auth.modal-login") 
     @endcomponent
     <!--/.modal -->
-    <!-- /.offcanvas-info -->
-    @component("auth.modal-register") 
-    @endcomponent
-    <!--/.modal -->
+ 
 
     <!-- /.wrapper -->
     @component("layouts.footer") 
