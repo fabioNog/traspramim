@@ -30,7 +30,7 @@
       </div>
 @else
 <div class="container flex-row justify-content-center">
-        <div class="navbar-brand"><a href="{{url('/')}}"><img src="#" srcset="style/images/logo/logo.png 1x, style/images/logo/logo.png 2x" alt="" /></a></div>
+        <div class="navbar-brand"><a href="{{url('/home')}}"><img src="#" srcset="style/images/logo/logo.png 1x, style/images/logo/logo.png 2x" alt="" /></a></div>
         <div class="navbar-other ml-auto order-lg-3">
           <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
             <li class="nav-item">
