@@ -17,44 +17,32 @@
 
 ## Versions
 
-CoreUI is built on top of Bootstrap 4 and supports popular frameworks.
+Trás Pra Mim is built on top of Laravel 8 and supports popular frameworks.
 
-* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-* [CoreUI Free Angular Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
-* [CoreUI Free Laravel Admin Template](https://github.com/coreui/coreui-free-laravel-admin-template)
-* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
-* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
-* [CoreUI Free Vue.js + Laravel Admin Template](https://github.com/coreui/coreui-free-vue-laravel-admin-template)
+* [Tras Pra Mim Laravel Template](https://traspramim.herokuapp.com)
 
-## CoreUI Pro
 
-* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/)
-* 💪  [CoreUI Pro Angular Admin Template](https://coreui.io/pro/angular)
-* 💪  [CoreUI Pro Laravel Admin Template](https://coreui.io/pro/laravel)
-* 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
-* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
-* 💪  [CoreUI Pro Vue + Laravel Admin Template](https://coreui.io/pro/vue-laravel)
+## TRÁS PRA MIM 
 
-## Admin Templates built on top of CoreUI Pro
+* 💪  [Tras Pra Mim Laravel Template](https://traspramim.herokuapp.com)
 
-| Default Theme | Legacy Theme | Dark Layout |
-| --- | --- | --- |
-| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_default.png)](https://coreui.io/pro/laravel/) | [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_legacy.png)](https://coreui.io/pro/laravel/)| [![CoreUI Pro Bootstrap Admin Template](https://coreui.io/images/mockups/mockup_3_1_dark.png)](https://coreui.io/pro/laravel/)
 
 ## Installation
 
 ``` bash
 # clone the repo
-$ git clone https://github.com/coreui/coreui-free-laravel-admin-template.git my-project
+$ git clonegit@github.com:fabioNog/traspramim.git 
 
 # go into app's directory
-$ cd my-project
+$ cd traspramim
 
 # install app's dependencies
 $ composer install
 
 # install app's dependencies
 $ npm install
+
+$ npm run dev
 
 ```
 
@@ -183,7 +171,7 @@ This user has roles: _user_ and _admin_
 
 ### How to add a link to the sidebar:
 
-> Instructions for CoreUI Free Laravel admin template only. _Pro and Vue.js versions have separate instructions._
+> Instructions for Trás Pra Mim template only. _Pro and Vue.js versions have separate instructions._
 
 #### To add a __link__ to the sidebar - modify seeds file:  
 `my-project/database/seeds/MenusTableSeeder.php`
@@ -249,7 +237,7 @@ $ php artisan migrate:refresh --seed
 Digital product for the purpose of finding travelers and buyers
 
 #### Users
-Buyer users and traveling users
+Buyer users and traveling users and purchase users
 
 #### Menu management 
 It is a system that allows you to create a new user and edit existing user. Create a new purchase and new Travel
@@ -287,7 +275,6 @@ It allows to:
 
 
 
-## Community
 
 
 
@@ -295,13 +282,5 @@ It allows to:
 
 
 
-## Copyright and license
 
-copyright 2020 creativeLabs Łukasz Holeczek. Code released under [the MIT license](https://github.com/coreui/coreui-free-laravel-admin-template/blob/master/LICENSE).
-There is only one limitation you can't can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. In past we faced some problems with persons who tried to sell CoreUI based templates.
 
-## Support CoreUI Development
-
-CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by donating on [PayPal](https://www.paypal.me/holeczek), buying [CoreUI Pro Version](https://coreui.io/pro) or buying one of our [premium admin templates](https://genesisui.com/?support=1).
-
-As of now I am exploring the possibility of working on CoreUI fulltime - if you are a business that is building core products using CoreUI, I am also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
