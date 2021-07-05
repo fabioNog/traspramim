@@ -9,6 +9,11 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 class ComprarController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +42,7 @@ class ComprarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**
