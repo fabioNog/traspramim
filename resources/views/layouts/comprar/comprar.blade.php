@@ -60,8 +60,10 @@
                   <div class="tab-pane" id="tab5-3">
                     @component("layouts.comprar.checar_comprar")
                     @endcomponent
-                  </div>              
+                  </div>
+                                
               </div>
+              
             </form>
             <!-- /.tab-content -->
           </div>
@@ -74,24 +76,49 @@
     <!-- /.wrapper -->
 
 </body>
-<script>
 
-function openBilling(evt, operator) {
-  console.log("Cliquei");
-  /* var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("nav-item");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(operator).style.display = "block";
-  evt.currentTarget.className += " active"; */
-}
-</script>
 @component("layouts.scripts")
 @endcomponent
+
+
+
+
+<script>
+
+    $('input.name').on('input',function(e){
+      
+      var name = $("#name").val();
+      console.log(name);
+      $("#name_product").empty();
+      $("#name_product").append(name);
+      
+    });
+
+    $(document).on('input', '#price', function(){
+      var price = $("#price").val();
+      var priceString = price.toString();
+      $("#price_product").empty();
+      $("#price_product").append(price);      
+    });
+
+    $(document).on('input', '#qtd', function() {
+      $('#qtd_value').html( $(this).val() );
+    });
+
+    $(document).on('input', '#desc', function(){
+      var desc = $("#desc").val();
+      $("#desc_product").empty();
+      $("#desc_product").append(desc);      
+    });
+
+ /*    $('input.desc').on('input',function(e){           
+      var desc= $("#desc").val();
+      console.log(desc);
+      $("#desc_product").empty();
+      $("#desc_product").append(desc);
+    }); */
+</script>
+
+
 
 </html>

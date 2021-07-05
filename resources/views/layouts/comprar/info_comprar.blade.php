@@ -14,7 +14,7 @@
         <div class="fields-black">
           <div class="form-group">
             <label for="exampleInputName2">Nome do Produto</label>
-            <input type="text" class="form-control" id="name" placeholder="Ex: Notebook">
+            <input type="text" class="form-control name" id="name" placeholder="Ex: Notebook">
           </div>
 
           <!-- img -->
@@ -56,12 +56,12 @@
           
           <div class="form-group">
             <label for="exampleInputName2">Quantidade de Produtos</label>
-            <input type="text" id="textInput" value="">
-            <input type="range" name="qnt" min="0" max="10" onchange="updateTextInput(this.value);">
+            <input type="text" id="qnt_input" value="" >
+            <input type="range" class="qtd" name="qtd" id="qtd" min="0" max="10" onchange="updateTextInput(this.value);">
           </div>
           <div class="form-group">
           <label for="exampleInputName2">Descricão</label>
-          <textarea class="form-control" rows="3" placeholder="Descreva o produto"></textarea>
+          <textarea type="text" class="form-control" rows="3" name="desc" id="desc" placeholder="Descreva o produto"></textarea>
           </div>
 
           <!-- /.form-group -->
@@ -70,6 +70,7 @@
               Proxímo
             </a>
           </div>
+          <p id="demo"></p>
 
         </div>
         <!-- /form -->
@@ -82,7 +83,7 @@
 </div>
 
 <!-- /.container-fluid -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
   $.ajaxSetup({
@@ -130,55 +131,11 @@
     $('#input_upload_imagem').click();
   }
 </script>
+<script>
+  function updateTextInput(val) {
+          document.getElementById('qnt_input').value = val; 
+        }
+</script>
 
 
 <!-- /.container-fluid -->
-<script type="text/javascript">
-  $.ajaxSetup({
-    headers: {
-      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-  });
-
-  $(document).on("click", "#arquivo .image-upload-wrap", function() {
-    $('#arquivo #input_upload_arquivo').click();
-    // $('.image-upload-wrap').hide();
-  });
-  $(document).on("ready", "#arquivo #input_upload_arquivo", function(e) {
-    if (e.target.files.length == 0) {
-      $('#arquivo .file-upload-image').attr('src', '');
-      $('#arquivo .file-upload-content').show();
-      $('#arquivo #input_upload_arquivo').val('');
-
-    } else {
-      $('#nome_imagem').html(e.target.files[0].name);
-      $('#arquivo .file-upload-image').attr('src', URL.createObjectURL(event.target.files[0]));
-      $('#arquivo .image-upload-wrap').hide();
-
-      $('#arquivo .file-upload-content').show();
-    }
-  });
-  $(document).on("change", "#arquivo #input_upload_arquivo", function(e) {
-    if (e.target.files.length == 0) {
-      $('#arquivo .file-upload-image').attr('src', '');
-      $('#arquivo .file-upload-content').show();
-      $('#arquivo .file-upload-content').hide();
-      $('#arquivo #input_upload_arquivo').val('');
-
-    } else {
-      $('#arquivo #nome_imagem').html(e.target.files[0].name);
-      $('#arquivo .image-upload-wrap').hide();
-
-      $('#arquivo .file-upload-content').show();
-    }
-  });
-
-  function alterarUpload_arquivo() {
-    $('#arquivo .file-upload-input').replaceWith($('#arquivo .file-upload-input').clone());
-    $('#input_upload_arquivo').click();
-  }
-
-  function updateTextInput(val) {
-          document.getElementById('textInput').value=val; 
-        }
-</script>

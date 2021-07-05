@@ -5,17 +5,24 @@
                 <h2 class="section-title mb-40 text-center">Cheque sua Compra</h2>
 
                     <div class="form-group">
-                        <label for="exampleInputName2">Nome do Produto</label>
-                        <input type="text" class="form-control" id="exampleInputName2"  placeholder="Ex: Notebook">
+                        <h2>Nome do Produto</h2>
+                        <label for="name" name="name_product" id ="name_product"></label>
                     </div>
-                    <!-- /.form-group -->
                     <div class="form-group">
-                        <label for="exampleInputEmail2">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                        <h2>Preço do Produto</h2>
+                        <label for="price" name="price_product" id ="price_product"></label>
                     </div>
-                    <!-- /.form-group -->
-                    <button type="submit" class="comprar btn btn-blue">Próximo</button>
-                <!-- /form -->
+                    <div class="form-group">
+                        <h2>Quantide(s) de Produto(s)</h2>
+                        <label for="qtd_value" name="qtd_value" id ="qtd_value"></label>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Descricao do Produto</h2>
+                        <label for="desc_product" name="desc_product" id ="desc_product"></label>
+                    </div>
+
+                    <button type="submit" class="comprar btn btn-blue">Cadastrar</button>
             </div>
             <!-- /column -->
         </div>
@@ -23,3 +30,10 @@
     </div>
     <!-- /.container -->
 </div>
+
+<script>
+        function myGeeks() {
+            document.getElementById('GFG').innerHTML
+                = 'A computer science portal for geeks';
+        }
+    </script>
