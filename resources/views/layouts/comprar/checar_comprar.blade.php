@@ -19,7 +19,7 @@
 
                     <div class="form-group">
                         <h2>Descricao do Produto</h2>
-                        <label for="desc_product" name="desc_product" id ="desc_product"></label>
+                        <label for="" name="desc_product" id ="desc_product"></label>
                     </div>
 
                     <button type="submit" class="comprar btn btn-blue">Cadastrar</button>

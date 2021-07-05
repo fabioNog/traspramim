@@ -16,12 +16,24 @@
 
         <div class="form-group">
           <label for="cidade_saida">CEP de Destino</label>
-          <input name="cep_destino" type="text" id="cep_destino" value="" size="10" maxlength="9" /></label><br />
+          <input  name="cep_destino" type="text" id="cep_destino" value="" size="10" maxlength="9" /></label><br />
         </div>
         <!-- /.form-group -->
         <div class="form-group">
           <label>Cidade de Destino:
             <input name="cidade_destino" type="text" id="cidade_destino" size="40" /></label><br />
+        </div>
+
+        <div class="form-group">
+          <label>Escolha uma Data:
+          <div class="form-group custom-select-wrapper">
+              <select class="custom-select" name="wait" id="wait">
+                <option selected>Selecione o maximo de espera</option>
+                <option value="1">Até 30 dias</option>
+                <option value="2">Até 60 dias</option>
+                <option value="2">Até 90 dias</option>
+              </select>
+            </div>
         </div>
         <!-- /.form-group -->
         <!-- /.form-group -->

@@ -96,9 +96,9 @@
 
     $(document).on('input', '#price', function(){
       var price = $("#price").val();
-      var priceString = price.toString();
+    //  var priceString = price.toString();
       $("#price_product").empty();
-      $("#price_product").append(price);      
+      $("#price_product").append('R$: '+price);      
     });
 
     $(document).on('input', '#qtd', function() {

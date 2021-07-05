@@ -14,14 +14,14 @@
         <div class="fields-black">
           <div class="form-group">
             <label for="exampleInputName2">Nome do Produto</label>
-            <input type="text" class="form-control name" id="name" placeholder="Ex: Notebook">
+            <input type="text" class="form-control name" id="name" name="name" placeholder="Ex: Notebook">
           </div>
 
           <!-- img -->
           <div class="form-group" id="imagem">
             <div class="file-upload">
               <label style="text-align: center;" for="exampleFormControlSelect1">Imagem</label>
-              <input id="input_upload_imagem" style="display:none;" type='file' name="imagem" accept="image/*">
+              <input id="input_upload_imagem" style="display:none;" type='file' name="imagem" accept="image/png, image/jpeg, image/jpg">
 
               <div class="image-upload-wrap">
                 <div class="col-md-12 col-sm-12">
@@ -51,7 +51,7 @@
 
           <div class="form-group">
             <label for="exampleInputName2">Preço do Produto</label>
-            <input type="number" class="form-control"  min="0" max="10000" step="1" name="price" id="price" required="required">
+            <input type="number" class="form-control"  min="0" max="10000" step="1" name="price" id="price" required>
           </div>
           
           <div class="form-group">
@@ -97,14 +97,17 @@
     // $('.image-upload-wrap').hide();
   });
   $(document).on("ready", "#imagem #input_upload_imagem", function(e) {
+    console.log(e.target.files.length);
     if (e.target.files.length == 0) {
+      
       $('#imagem .file-upload-image').attr('src', '');
       $('#imagem .file-upload-content').show();
       $('#imagem #input_upload_imagem').val('');
 
     } else {
+      
       $('#nome_imagem').html(e.target.files[0].name);
-      $('#imagem .file-upload-image').attr('src', URL.createObjectURL(event.target.files[0]));
+      $('#imagem .file-upload-image').attr('src', URL.createObjectURL(event.target.files[1]));
       $('#imagem .image-upload-wrap').hide();
 
       $('#imagem .file-upload-content').show();
