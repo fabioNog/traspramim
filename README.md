@@ -4,8 +4,7 @@
 ## Table of Contents
 
 * [Versions](#Laravel 8)
-* [Trás Pra MiM](#coreui-pro)
-* [Admin Templates built on top of CoreUI Pro](#admin-templates-built-on-top-of-coreui-pro)
+* [Trás Pra MiM](#tras-pra-mim)
 * [Installation](#installation)
 * [Usage](#Usage)
 * [Features](#Features)
@@ -13,7 +12,6 @@
 * [Community](#community)
 * [Community Projects](#community-projects)
 * [License](#license)
-* [Support CoreUI Development](#support-coreui-development)
 
 ## Versions
 
@@ -183,7 +181,6 @@ $id = $this->insertLink( $rolesString, $visibleName, $href, $iconString);
 * `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
 * `$visibleName` - a string caption visible in sidebar
 * `$href` - a href, ex. `/homepage` or `http://example.com`
-* `$iconString` - a string containing valid CoreUI Icon name (kebab-case), ex. `cil-speedometer` or `cil-pencil`
 
 To add a __title__ to the sidebar - use function `insertTitle()`:
 ```php
@@ -196,9 +193,7 @@ To add a __dropdown__ menu to the sidebar - use function `beginDropdown()`:
 ```php
 $id = $this->beginDropdown( $rolesString, $visibleName, $iconString);
 ```
-* `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,admin"`
-* `$visibleName` - a string caption visible in sidebar
-* `$iconString` - a string containing valid CoreUI icon name (kebab-case). For example: `cil-speedometer` or `cil-pencil`
+* `$rolesString` - a string with list of user roles this menu element will be available, ex. `"guest,user,
 
 To end dropdown section - use function `endDropdown()`. 
 
@@ -252,7 +247,7 @@ To add a new menu item to the menu you must:
 * type ( to choice: link, title and dropdown)
 * Href, the address to which the item is to refer,
 * Parent (To nest the item inside dropdown)
-* CORUI icons
+
 
 #### Role management
 Allows you to create, edit, delete and reorder user roles.
