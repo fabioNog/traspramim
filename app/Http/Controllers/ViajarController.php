@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Travel;
 use Illuminate\Http\Request;
+use Exception;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class ViajarController extends Controller
 {
@@ -18,7 +22,7 @@ class ViajarController extends Controller
      */
     public function index()
     {
-        //
+        return view('layouts.viajar.viajar');
     }
 
     /**
@@ -39,7 +43,12 @@ class ViajarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Travel::create([
+            "cidade_saida" => $request->cidade_saida,
+            "cidade_destino" => $request->cidade_destino,
+            "travel_at"  => $request->travel_at,
+        ]);
+        return redirect()->intended('home');
     }
 
     /**
