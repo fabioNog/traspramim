@@ -45,25 +45,24 @@
           </div>
           <!--/column -->
           <div class="col-lg-7 ml-auto">
-            <div class="tab-content">
-              <div class="tab-pane show active" id="tab5-1">
-                @component("layouts.comprar.info_comprar")
-                @endcomponent
+          <form method="POST" action="{{ route('comprar.store') }}">
+              @csrf
+
+              <div class="tab-content">
+                  <div class="tab-pane show active" id="tab5-1">
+                    @component("layouts.comprar.info_comprar")
+                    @endcomponent
+                  </div>
+                  <div class="tab-pane" id="tab5-2">
+                    @component("layouts.comprar.info_viajar")
+                    @endcomponent
+                  </div>
+                  <div class="tab-pane" id="tab5-3">
+                    @component("layouts.comprar.checar_comprar")
+                    @endcomponent
+                  </div>              
               </div>
-              <div class="tab-pane" id="tab5-2">
-                @component("layouts.comprar.info_viajar")
-                @endcomponent
-              </div>
-              <div class="tab-pane" id="tab5-3">
-                @component("layouts.comprar.checar_comprar")
-                @endcomponent
-              </div>
-              <div class="tab-pane" id="tab5-4">
-                <figure>
-                  <img src="style/images/art/ui4.png" alt="" />
-                </figure>
-              </div>
-            </div>
+            </form>
             <!-- /.tab-content -->
           </div>
           <!--/column -->
