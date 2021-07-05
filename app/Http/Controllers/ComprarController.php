@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comprar;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 use Exception;
@@ -42,7 +43,18 @@ class ComprarController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        $arquivo_banco = Comprar::create([
+            "name" => $request->name,
+            "imagem" => $request->imagem,
+            "price" => $request->price,
+            "qtd" => $request->qtd,
+            "desc" => $request->desc,
+            "cidade_saida" => $request->cidade_saida,
+            "cidade_destino" => $request->cidade_destino,
+            "wait" => $request->wait,
+        ]);
+        return redirect()->intended('home');
+        
     }
 
     /**
