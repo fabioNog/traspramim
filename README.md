@@ -1,19 +1,10 @@
-# CoreUI Free Laravel Bootstrap Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?text=CoreUI%20-%20Free%20Bootstrap%204%20Admin%20Template%20&url=https://coreui.io&hashtags=bootstrap,admin,template,dashboard,panel,free,angular,react,vue)
+# Trás Pra Mim
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[![Bootstrap Admin Template](https://coreui.io/images/github/vue-free-template-3.gif)](https://coreui.io/laravel/)
-
-Curious why I decided to create CoreUI? Please read this article: [Jack of all trades, master of none. Why Bootstrap Admin Templates suck.](https://medium.com/@lukaszholeczek/jack-of-all-trades-master-of-none-5ea53ef8a1f#.7eqx1bcd8)
-
-CoreUI offers 6 versions: [Bootstrap](https://github.com/coreui/coreui-free-bootstrap-admin-template), [Angular](https://github.com/coreui/coreui-free-angular-admin-template), [Laravel](https://github.com/coreui/coreui-free-laravel-admin-template), [React.js](https://github.com/coreui/coreui-free-react-admin-template), [Vue.js](https://github.com/coreui/coreui-free-vue-admin-template), and [Vue.js + Laravel](https://github.com/coreui/coreui-free-vue-laravel-admin-template).
-
-CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
 
 ## Table of Contents
 
-* [Versions](#versions)
-* [CoreUI Pro](#coreui-pro)
+* [Versions](#Laravel 8)
+* [Trás Pra MiM](#coreui-pro)
 * [Admin Templates built on top of CoreUI Pro](#admin-templates-built-on-top-of-coreui-pro)
 * [Installation](#installation)
 * [Usage](#Usage)
@@ -255,20 +246,14 @@ $ php artisan migrate:refresh --seed
 * [Email Templates](#E-mail-Templates)
 
 #### Notes
-It is an example of data presentation in a pagination table, and CRUD functionality.
+Digital product for the purpose of finding travelers and buyers
 
 #### Users
-It is a simple example of how to manage registered users.
+Buyer users and traveling users
 
 #### Menu management 
-It is a system that allows you to create a new menu and edit existing menus. To place a new menu named "new" in any view use this code:
-```php
-        <?php
-            use the App\MenuBuilder\FreelyPositionedMenus;
-            if(isset($appMenus['new'])){
-                FreelyPositionedMenus::render( $appMenus['new'] , '', 'your-css-class-of-ul-element');
-            }
-        ?>  
+It is a system that allows you to create a new user and edit existing user. Create a new purchase and new Travel
+ 
 ```
 #### Manage menu items
 Allows you to add, edit and delete menu items.
@@ -292,60 +277,23 @@ It allows to:
 * Move media between folders,
 * Cut images,
 
-#### BREAD system
-BREAD stands for: browse, read, edit, add, delete.
-Our BREAD system allows you to easily and quickly generate for any table, from the database, a simple BREAD.
-To create a new BREAD just enter a table name from the database.  Then enter a name for the form. Enter the number of rows in the browse table. Choose if you want the browse table to contain buttons: "show", "edit", "add", "delete".
-Assign roles for users who will be able to use the ready BREAD.
-Then complete each column of the table separately:
-* the column name visible to the user,
-* the input type for the column,
-The last step is to select the appropriate checkboxes:
-* browse (allows to display the column in the data table),
-* read (allows you to display the column in the show view,)
-* edit (enables column editing)
-* add (allows you to complete the column data when adding a record. Required if the column is not nullable).
-It is also possible to handle relationships with another table.
-If the column is a foreign key, it should be specified: in the field "Optional relation table name" - table name to which the foreign key refers, in the "Optional column name in relation table - to print" field - the name of the column that is in the relation table to be displayed. Finally, select one of the two "field types" that relate to the relation: 'relation select' or 'relation radio'.
-
-#### E-mail Templates
-It is an example of managing e-mail templates. Allows you to create, edit and delete templates. It also allows you to send an E-mail to a selected address.
-
 
 ## Creators
 
-**Łukasz Holeczek**
+**Fabio Nogueira**
 
-* <https://twitter.com/lukaszholeczek>
-* <https://github.com/mrholek>
+* <https://www.linkedin.com/>
+* https://github.com/fabioNog>
 
-**Andrzej Kopański**
-
-* <https://github.com/xidedix>
-
-**Marcin Michałek**
-
-* <https://github.com/rakieta2015>
 
 
 ## Community
 
-Get updates on CoreUI's development and chat with the project maintainers and community members.
-
-- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
-- Read and subscribe to [CoreUI Blog](https://coreui.io/blog/).
 
 
-## CoreUI Icons (500+ Free icons) - Premium designed free icon set with marks in SVG, Webfont and raster formats.
-
-CoreUI Icons are beautifully crafted symbols for common actions and items. You can use them in your digital products for web or mobile app. Ready-to-use fonts and stylesheets that work with your favorite frameworks.
-
-![CoreUI Free Icons](https://coreui.io/images/icons_free_bg_set.png)
 
 
-### CoreUI Icons Preview & Docs
 
-[https://coreui.io/icons/](https://coreui.io/icons/)
 
 ## Copyright and license
 
