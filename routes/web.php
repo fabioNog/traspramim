@@ -29,4 +29,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/comprar', [ComprarController::class, 'index'])->name('comprar');
+Route::get('/comprar', [ComprarController::class, 'index'])->name('comprar');
 Route::get('/viajar', [ViajarController::class, 'index'])->name('viajar');
+
+Route::post('/comprar', [ComprarController::class, 'store'])->name('comprar.store');
+//Route::resource('comprar', [ComprarController::class, 'index']);
