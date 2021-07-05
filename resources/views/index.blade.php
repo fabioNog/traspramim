@@ -137,6 +137,16 @@
       <p>Você encontra TUDO!</p>
       <div class="space20"></div>
       <!-- Logout -->
+      <a class="btn btn-blue" href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+          document.getElementById('logout-form').submit();">
+          {{ __('Minhas Compras') }}
+      </a>
+      <a class="btn btn-pink" href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+          document.getElementById('logout-form').submit();">
+          {{ __('Minhas Viagens') }}
+      </a>
       <a class="btn btn-red" href="{{ route('logout') }}"
           onclick="event.preventDefault();
           document.getElementById('logout-form').submit();">
@@ -145,28 +155,6 @@
       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
           @csrf
       </form>
-
-      <!-- /.widget -->
-      <div class="widget">
-        <ul class="list-unstyled">
-          <li><a href="#" class="nocolor">Our Story</a></li>
-          <li><a href="#" class="nocolor">Terms of Use</a></li>
-          <li><a href="#" class="nocolor">Privacy Policy</a></li>
-          <li><a href="#" class="nocolor">Contact Us</a></li>
-        </ul>
-      </div>
-      <!-- /.widget -->
-      <div class="widget">
-        <h3 class="widget-title">Follow Us</h3>
-        <ul class="social social-mute social-s ml-auto">
-          <li><a href="#"><i class="jam jam-twitter"></i></a></li>
-          <li><a href="#"><i class="jam jam-facebook"></i></a></li>
-          <li><a href="#"><i class="jam jam-instagram"></i></a></li>
-          <li><a href="#"><i class="jam jam-vimeo"></i></a></li>
-          <li><a href="#"><i class="jam jam-youtube"></i></a></li>
-        </ul>
-      </div>
-      <!-- /.widget -->
     </div>
     <!-- /.offcanvas-info -->
     @component("auth.modal-login") 

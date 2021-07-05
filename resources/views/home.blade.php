@@ -16,26 +16,7 @@
         @csrf
     </form>
 
-    <!-- /.widget -->
-    <div class="widget">
-        <ul class="list-unstyled">
-            <li><a href="#" class="nocolor">Our Story</a></li>
-            <li><a href="#" class="nocolor">Terms of Use</a></li>
-            <li><a href="#" class="nocolor">Privacy Policy</a></li>
-            <li><a href="#" class="nocolor">Contact Us</a></li>
-        </ul>
-    </div>
-    <!-- /.widget -->
-    <div class="widget">
-        <h3 class="widget-title">Follow Us</h3>
-        <ul class="social social-mute social-s ml-auto">
-            <li><a href="#"><i class="jam jam-twitter"></i></a></li>
-            <li><a href="#"><i class="jam jam-facebook"></i></a></li>
-            <li><a href="#"><i class="jam jam-instagram"></i></a></li>
-            <li><a href="#"><i class="jam jam-vimeo"></i></a></li>
-            <li><a href="#"><i class="jam jam-youtube"></i></a></li>
-        </ul>
-    </div>
+
     <!-- /.widget -->
 </div>
 <div class="wrapper light-wrapper">
