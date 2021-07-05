@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                 <h2 class="section-title mb-40 text-center">Cheque sua Compra</h2>
-                <form class="fields-black">
+
                     <div class="form-group">
                         <label for="exampleInputName2">Nome do Produto</label>
-                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Ex: Notebook">
+                        <input type="text" class="form-control" id="exampleInputName2"  placeholder="Ex: Notebook">
                     </div>
                     <!-- /.form-group -->
                     <div class="form-group">
@@ -14,8 +14,7 @@
                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                     </div>
                     <!-- /.form-group -->
-                    <a class="comprar btn btn-blue">Próximo</a>
-                </form>
+                    <button type="submit" class="comprar btn btn-blue">Próximo</button>
                 <!-- /form -->
             </div>
             <!-- /column -->
